@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Confirmed!";
+    Layout = null;
+}
+
+<html>
+<head>
+    <title> Account is Activation! </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="padding-all">
+        <div class="header">
+            <h1 style="color:green">Thank you for your registration!!</h1>
+        </div>
+
+        <div class="design-w3l">
+            <div class="mail-form-agile">
+                <p style="color:white"> Please check your email. We send activation instruction to your email. <a onclick="window.location.href = '@Url.Action("Login", "Account")'" style="color:green"><u> Login </u>  </a></p>
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .text-danger {
+        display: block;
+        color: red;
+    }
+
+    .Inpbtn {
+        font-size: 18px;
+        padding: 10px 20px;
+        letter-spacing: 1.2px;
+        border: none;
+        text-transform: capitalize;
+        outline: none;
+        background: #03A9F4;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        -webkit-transition-duration: 0.9s;
+        transition-duration: 0.9s;
+    }
+</style>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

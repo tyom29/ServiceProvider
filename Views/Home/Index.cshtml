@@ -1,0 +1,30 @@
+﻿@model ServiceProvider.Domain.Customer
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="jumbotron">
+    <h3>Welcome @Model.Email</h3>
+    <p class="lead">
+        Restaurant Reservation WordPress Plugin.
+        <br />Our goal is your constant client base growth. Stop losing clients on your website. Offer them to book a table right away.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>Getting started</h4>
+        <p>
+            <b> <u> API Key for plugin installation </u> <br /> @Model.ApiKey </b>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h4>Instructions how to setup plugin </h4>
+        <p>Some Dummy text. Replace it! NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+    </div>
+    <div class="col-md-4">
+        <h4>Download plugin</h4>
+        <p>Now You can easily use our plugin just download it.</p>
+        <p><a class="btn btn-default" href="https://reservationdiary.eu/download/1292"><b>Download </b></a></p>
+    </div>
+</div>
